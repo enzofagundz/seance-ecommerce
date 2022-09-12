@@ -1,0 +1,316 @@
+/*
+    Fontes
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Raleway:wght@400;500;600;700&display=swap');
+
+/*
+    Variáveis
+*/
+
+:root {
+    --cor1: #273440;
+    --cor2: #345573;
+    --cor3: #f2a74b;
+    --cor4: #d9863d;
+    --cor5: #8c583a;
+}
+
+/*
+    Configurações gerais
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+}
+
+.title h1 {
+    font-family: 'Aclonica', sans-serif;
+    color: var(--cor1);
+}
+
+.form {
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.form-group {
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: left;
+}
+
+.input-title,
+.footer p,
+.aside-text,
+.check,
+.input-get,
+.input-btn {
+    font-family: 'Raleway', sans-serif;
+}
+
+.input-get {
+    background-color: #d9d9d95e;
+    border: 0;
+    color: #7d7d7d;
+}
+
+.input-btn {
+    background-color: #273440;
+    color: white;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+}
+
+.input-btn:hover {
+    background-color: var(--cor3);
+}
+
+.input-btn:active {
+    background-color: var(--cor3);
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.aside-media {
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+}
+
+.media-btn {
+    border: 0;
+    background-color: #d9d9d9;
+}
+
+.footer p a,
+.check a {
+    color: black;
+    cursor: pointer;
+}
+
+.aside,
+.footer {
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p a,
+.check a {
+    text-decoration: none;
+}
+
+/*
+    Media querie mobile
+*/
+
+@media (min-width: 360px) and (max-width: 1024px) { 
+    
+    .main {
+        grid-template-columns: 24px 80px 80px 80px 80px 24px;
+        column-gap: 20px;
+    }
+
+    .title,
+    .form,
+    .aside,
+    .footer {
+        grid-column: 2 / 6;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .input-title {
+        margin-bottom: 16px;
+    }
+
+    .input-title,
+    .footer p,
+    .aside-text {
+        font-size: 1em;
+    }
+
+    .check {
+        font-size: .75em;
+    }
+
+    .input-get {
+        height: 48px;
+        border-radius: 8px;
+        padding: 1em;
+    }
+
+    .input-btn {
+        border-radius: 8px;
+        height: 48px;
+    }
+
+    .aside-text {
+        margin-bottom: 32px;
+    }
+
+    .media-group {
+        margin: 0 10px;
+    }
+
+    .media-btn {
+        border-radius: 8px;
+        height: 48px;
+        width: 158px;
+    }
+
+    .img-circle {
+        width: auto;
+        height: 24px;
+    }
+}
+
+/*
+    Media querie tablet
+*/
+
+@media (min-width: 1025px) and (max-width: 1440px) { 
+    .main {
+        grid-template-columns: 88px 85px 85px 85px 85px 85px 85px 85px 85px 88px;
+        column-gap: 24px;
+    }
+
+    .title,
+    .form,
+    .aside,
+    .footer {
+        grid-column: 2 / 10;
+    }
+
+    .title h1 {
+        font-size: 3em;
+    }
+
+    .input-title {
+        margin-bottom: 16px;
+    }
+
+    .input-title,
+    .footer p,
+    .aside-text {
+        font-size: 1.25em;
+    }
+
+    .check {
+        font-size: 1em;
+    }
+
+    .input-get {
+        height: 56px;
+        border-radius: 8px;
+        padding: 1em;
+        font-size: 1em;
+    }
+
+    .input-btn {
+        border-radius: 8px;
+        height: 56px;
+        font-size: 1em;
+    }
+
+    .aside-text {
+        margin-bottom: 32px;
+    }
+
+    .media-group {
+        margin: 0 10px;
+    }
+
+    .media-btn {
+        border-radius: 8px;
+        height: 48px;
+        width: 158px;
+    }
+
+    .img-circle {
+        width: auto;
+        height: 24px;
+    }
+}
+
+/*
+    Media querie desktop
+*/
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .main {
+        grid-template-columns: 100px 85px 85px 85px 85px 85px 85px 85px 85px 85px 85px 85px 85px 100px;
+        column-gap: 20px;
+    }
+
+    .title,
+    .form,
+    .aside,
+    .footer {
+        grid-column: 2 / 8;
+    }
+
+    .title h1 {
+        font-size: 3em;
+    }
+
+    .input-title {
+        margin-bottom: 16px;
+    }
+
+    .input-title,
+    .footer p,
+    .aside-text {
+        font-size: 1.25em;
+    }
+
+    .check {
+        font-size: 1em;
+    }
+
+    .input-get {
+        height: 56px;
+        border-radius: 8px;
+        padding: 1em;
+        font-size: 1em;
+    }
+
+    .input-btn {
+        border-radius: 8px;
+        height: 56px;
+        font-size: 1.25em;
+    }
+
+    .aside-text {
+        margin-bottom: 32px;
+    }
+
+    .media-group {
+        margin: 0 10px;
+    }
+
+    .media-btn {
+        border-radius: 8px;
+        height: 48px;
+        width: 158px;
+    }
+
+    .img-circle {
+        width: auto;
+        height: 24px;
+    }
+}

@@ -1,0 +1,35 @@
+.title {
+    grid-row: 2;
+}
+
+.form {
+    grid-row: 3;
+}
+
+.aside {
+    grid-row: 4;
+}
+
+.footer {
+
+    grid-row: 5;
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .main {
+        grid-template-rows: 40px .10fr 1fr .25fr .25fr .15fr;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) { 
+    .main {
+        grid-template-rows: 64px .10fr 1fr .25fr .25fr .15fr;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) { 
+    .main {
+        grid-template-rows: 72px .10fr 1fr .25fr .25fr .15fr;
+    }
+}
+
