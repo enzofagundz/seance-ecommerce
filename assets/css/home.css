@@ -29,13 +29,13 @@ body {
 
 @media (min-width: 360px) and (max-width: 1024px) {
     .main {
-        grid-template-rows: 24px .25fr .25fr .5fr .75fr 1.4fr 2fr;
+        grid-template-rows: 24px .25fr .25fr .5fr .75fr 1.4fr 5fr;
     }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) { 
     .main {
-        grid-template-rows: 64px .10fr 1fr .25fr .25fr .15fr;
+        grid-template-rows: 64px .25fr .35fr .35fr .75fr 1fr;
     }
 }
 
