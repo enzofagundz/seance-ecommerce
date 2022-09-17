@@ -23,9 +23,13 @@
     grid-row: 7;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 @media (min-width: 360px) and (max-width: 1024px) {
     .main {
-        grid-template-rows: 24px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 24px .25fr .25fr .5fr .75fr 1.4fr 2fr;
     }
 }
 

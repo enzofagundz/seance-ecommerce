@@ -25,7 +25,7 @@
 }
 
 .main {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     display: grid;
     justify-content: center;
@@ -60,7 +60,9 @@
 .category-button,
 .offers-title,
 .trend-title,
-.recommended-title
+.recommended-title,
+.recommended,
+.trend
  {
     font-family: 'Raleway', sans-serif;
 }
@@ -119,6 +121,104 @@
     text-decoration: none;
 }
 
+.category-buttons-container,
+.navbar-content {
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+}
+
+.category-button {
+    background-color: #273440;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers-banner {
+    width: 100%;
+    height: auto;
+}
+
+.offers-banner-img {
+    background-color: #7d7d7d;
+}
+
+.navbar-icon {
+    text-decoration: none;
+}
+
+.to-right,
+.navbar-content {
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+}
+
+.recommended-products {
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: nowrap row;
+}
+
+.recommended-products-img {
+    background-color: #7d7d7d;
+}
+
+.recommended-products-info {
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.trend {
+    width: 100%;
+    height: auto;
+}
+
+.trend-product-title {
+    font-weight: 500;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: none;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .trend-container {
+    width: 156px;
+  }
 /*
     Media querie mobile
 */
@@ -134,12 +234,15 @@
     .form,
     .aside,
     .footer,
+    /* Estilos Home*/
     .navbar,
     .header,
     .category,
     .offers,
+    .offers-banner,
     .trend,
-    .recommended {
+    .recommended,
+    .category-buttons-container {
         grid-column: 2 / 6;
     }
 
@@ -151,7 +254,6 @@
     .input-title {
         margin-bottom: 16px;
     }
-
 
     .category-title,
     .offers-title,
@@ -199,6 +301,96 @@
     .img-circle {
         width: auto;
         height: 24px;
+    }
+
+    /*
+        Estilos home
+    */
+
+    .category-title,
+    .trend-title,
+    .recommended-title,
+    .offers-title {
+        margin-bottom: 16px;
+    }
+
+    .category-button {
+        height: 32px;
+        width: 80px;
+        border-radius: 8px;
+    }
+
+    .offers,
+    .category,
+    .trend,
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .navbar {
+        margin-bottom: 64px;
+    }
+
+    .recommended-products-description {
+        font-size: 10px;
+    }
+    
+    .recommended-products-title,
+    .trend-product-title {
+        font-size: 14px;
+    }
+    
+    .recommended-products-price {
+        font-size: 18px;
+    }
+
+    .recommended-products-info {
+        width: 216px;
+        height: 100%;
+    }
+
+    .recommended-products-img {
+        width: 112px;
+        height: 112px;
+        margin-right: 8px;
+    }
+    
+    .recommended-products {
+        height: 112px;
+        margin-bottom: 16px;
+    }
+
+    #shopping-cart {
+        margin-left: 34px;
+    }
+
+    .offers-banner-img {
+        width: 100%;
+        height: 108px;
+    }
+    
+    .offers-banner-img,
+    .trend-product-img,
+    .recommended-products,
+    .recommended-products-img {
+        border-radius: 16px;
+    }
+
+    .trend-product-img {
+        width: 156px;
+        height: 156px;
+        background-color: #7d7d7d;
+        margin-bottom: 8px;
+    }
+
+    .trend-product-title-container {
+        width: 156px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex-flow: nowrap column;
+        justify-items: center;
     }
 }
 

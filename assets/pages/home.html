@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Séance</title>
 </head>
-<body>
+<body">
     <main class="main">
         <nav class="navbar">
             <div class="navbar-content">
                 <a class="navbar-icon" href="#">
                     <img src="../img/logo-seance.svg" alt="" class="icon-responsive">
                 </a>
-                <a class="navbar-icon" href="#">
-                    <img src="../img/search.svg" alt="" class="icon-responsive">
-                </a>
-                <a class="navbar-icon" href="#">
-                    <img src="../img/shopping-cart.svg" alt="" class="icon-responsive">
-                </a>
+                <div class="to-right">
+                    <a class="navbar-icon" href="#">
+                        <img src="../img/search.svg" alt="" class="icon-responsive">
+                    </a>
+                    <a class="navbar-icon" href="#">
+                        <img src="../img/shopping-cart.svg" alt="" class="icon-responsive" id="shopping-cart">
+                    </a>
+                </div>
             </div>
         </nav><!--Fim navbar-->
         <header class="header">
@@ -57,7 +60,8 @@
                 </h2>
             </div>
             <div class="offers-banner">
-                <img src="" alt="" class="offers-banner-img">
+                <!--<img src="" alt="" class="offers-banner-img">-->
+                <div class="offers-banner-img"></div>
             </div>
         </div><!--Fim offers-->
         <div class="trend">
@@ -69,31 +73,70 @@
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        Slide 1
+                        <div class="trend-container">
+                            <div class="trend-product-img"></div>
+                            <div class="trend-product-title-container">
+                                <h2 class="trend-product-title">
+                                    Cadeira Herman Miller
+                                </h2>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        Slide 2
+                        <div class="trend-product-img"></div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira Herman Miller
+                            </h2>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        Slide 3
+                        <div class="trend-product-img"></div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira Herman Miller
+                            </h2>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        Slide 4
+                        <div class="trend-product-img"></div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira Herman Miller
+                            </h2>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        Slide 5
+                        <div class="trend-product-img"></div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira Herman Miller
+                            </h2>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        Slide 6
+                        <div class="trend-product-img"></div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira Herman Miller
+                            </h2>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        Slide 7
+                        <div class="trend-product-img"></div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira Herman Miller
+                            </h2>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        Slide 8
-                    </div>
-                    <div class="swiper-slide">
-                        Slide 9
+                        <div class="trend-product-img"></div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira Herman Miller
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,16 +149,55 @@
             </div>
             <div class="recommended-content">
                 <div class="recommended-products">
-                    
+                    <div class="recommended-products-img"></div>
+                    <div class="recommended-products-info">
+                        <h3 class="recommended-products-title">
+                                Caddeira Herman Miller
+                        </h3>
+                        <p class="recommended-products-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ducimus veniam quia amet accusamus necessitatibus...
+                        </p>
+                        <h2 class="recommended-products-price">
+                                R$59,90
+                        </h2>
+                    </div>
                 </div>
                 <div class="recommended-products">
-
+                    <div class="recommended-products-img"></div>
+                    <div class="recommended-products-info">
+                        <h3 class="recommended-products-title">
+                                Caddeira Herman Miller
+                        </h3>
+                        <p class="recommended-products-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ducimus veniam quia amet accusamus necessitatibus...
+                        </p>
+                        <h2 class="recommended-products-price">
+                                R$59,90
+                        </h2>
+                    </div>
                 </div>
                 <div class="recommended-products">
-
+                    <div class="recommended-products-img"></div>
+                    <div class="recommended-products-info">
+                        <h3 class="recommended-products-title">
+                                Caddeira Herman Miller
+                        </h3>
+                        <p class="recommended-products-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ducimus veniam quia amet accusamus necessitatibus...
+                        </p>
+                        <h2 class="recommended-products-price">
+                                R$59,90
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div><!--Fim recommended-->
     </main><!--Fim main-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
 </body>
 </html>
