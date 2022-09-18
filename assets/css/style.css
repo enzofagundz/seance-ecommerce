@@ -297,6 +297,10 @@
         height: 48px;
     }
 
+    .aside {
+        margin-top: 24px;
+    }
+
     .aside-text {
         margin-bottom: 32px;
     }
@@ -459,6 +463,10 @@
         border-radius: 8px;
         height: 56px;
         font-size: 1em;
+    }
+
+    .aside {
+        margin-top: 24px;
     }
 
     .aside-text {
@@ -635,6 +643,10 @@
         border-radius: 8px;
         height: 56px;
         font-size: 1.25em;
+    }
+
+    .aside {
+        margin-top: 24px;
     }
 
     .aside-text {
