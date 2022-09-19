@@ -26,7 +26,7 @@
 
 .main {
     height: auto;
-    width: 100vw;
+    width: 100%;
     display: grid;
     justify-content: center;
 }
@@ -259,6 +259,10 @@
         grid-column: 2 / 6;
     }
 
+    .title h1 {
+        margin-bottom: 44px;
+    }
+
     .title h1,
     .header-title {
         font-size: 2rem;
@@ -266,6 +270,18 @@
 
     .input-title {
         margin-bottom: 16px;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+    }
+
+    .check {
+        margin: 16px 0px;
+    }
+
+    .footer {
+        margin-top: 16px;
     }
 
     .category-title,
@@ -434,6 +450,10 @@
         grid-column: 2 / 10;
     }
 
+    .title {
+        margin-bottom: 64px;
+    }
+
     .title h1 {
         font-size: 3em;
     }
@@ -446,6 +466,18 @@
     .footer p,
     .aside-text {
         font-size: 1.25em;
+    }
+
+    .form-group {
+        margin-bottom: 24px;
+    }
+
+    .check {
+        margin: 16px 0px;
+    }
+
+    .footer {
+        margin: 24px 0px;
     }
 
     .check {
@@ -618,6 +650,26 @@
         font-size: 3em;
     }
 
+    .title {
+        margin-bottom: 72px;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+    }
+
+    .check {
+        margin: 16px 0px;
+    }
+
+    .footer {
+        margin: 24px 0px;
+    }
+
+    .check {
+        font-size: 1em;
+    }
+    
     .input-title {
         margin-bottom: 16px;
     }
