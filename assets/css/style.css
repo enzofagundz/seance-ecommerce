@@ -62,7 +62,8 @@
 .trend-title,
 .recommended-title,
 .recommended,
-.trend
+.trend,
+.form-answer p
  {
     font-family: 'Raleway', sans-serif;
 }
@@ -71,6 +72,10 @@
     background-color: #d9d9d95e;
     border: 0;
     color: #7d7d7d;
+}
+
+.form-answer p {
+    color: red;
 }
 
 .input-btn {
@@ -232,6 +237,10 @@
     text-decoration: none;
     color: black;
 }
+
+.responsive {
+    border-radius: 16px;
+}
 /*
     Media querie mobile
 */
@@ -273,6 +282,10 @@
     }
 
     .form-group {
+        margin-bottom: 16px;
+    }
+
+    .form-answer p {
         margin-bottom: 16px;
     }
 
@@ -772,14 +785,15 @@
     }
 
     .swiper-slide {
-        width: 300px;
-        height: 444px;
+        width: 100%;
+        max-width: 320px;
+        height: 310px;
         flex-flow: nowrap column;
     }
 
     .trend-product-img {
-        width: 300px;
-        height: 400px;
+        width: 280px;
+        height: 300px;
         border-radius: 16px;
         margin-bottom: 16px;
     }

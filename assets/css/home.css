@@ -41,7 +41,7 @@ body {
 
 @media (min-width: 1441px) and (max-width: 1920px) { 
     .main {
-        grid-template-rows: 72px .10fr 1fr .25fr .25fr .15fr;
+        grid-template-rows: 72px .1fr .35fr .25fr .50fr .75fr 1fr;
     }
 }
 
