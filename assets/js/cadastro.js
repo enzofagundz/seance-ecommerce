@@ -5,15 +5,14 @@ let user = {
 }
 
 const BUTTON = document.querySelector('#submit');
-var paragraph = document.createElement('p');
-var text = document.createTextNode("As senhas não coincidem");
-var textArea = document.querySelector('.form-answer');
-
-paragraph.appendChild(text);
-
+//var paragraph = document.createElement('p');
+var text;
+var textArea = document.querySelector('.form-answer-text');
 
 BUTTON.addEventListener('click', function(event){
     event.preventDefault();
+
+    document.querySelector('.form-answer-text').textContent = ' ';
 
     user.mail = document.querySelector('#email').value;
     user.password = document.querySelector('#password').value;
@@ -36,9 +35,6 @@ BUTTON.addEventListener('click', function(event){
         {
             text = document.createTextNode('Campo para confirmar senha vazio');
         }
-        
-        paragraph.appendChild(text);
-        textArea.appendChild(paragraph);
     }
     else
     {
@@ -52,9 +48,14 @@ BUTTON.addEventListener('click', function(event){
         }
         else
         {
-            textArea.appendChild(paragraph);
+            text = document.createTextNode('As senhas não coincidem');
+            // paragraph.appendChild(text);
+            // textArea.appendChild(paragraph);
             //alert("Usuário ou senha incorreto");
         }
-    }   
+    }
+    
+    //paragraph.appendChild(text);
+    textArea.appendChild(text);
 });
 
