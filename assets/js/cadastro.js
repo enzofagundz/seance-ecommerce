@@ -5,9 +5,8 @@ let user = {
 }
 
 const BUTTON = document.querySelector('#submit');
-//var paragraph = document.createElement('p');
-var text;
-var textArea = document.querySelector('.form-answer-text');
+let text;
+let textArea = document.querySelector('.form-answer-text');
 
 BUTTON.addEventListener('click', function(event){
     event.preventDefault();
@@ -49,13 +48,9 @@ BUTTON.addEventListener('click', function(event){
         else
         {
             text = document.createTextNode('As senhas não coincidem');
-            // paragraph.appendChild(text);
-            // textArea.appendChild(paragraph);
-            //alert("Usuário ou senha incorreto");
         }
     }
     
-    //paragraph.appendChild(text);
     textArea.appendChild(text);
 });
 

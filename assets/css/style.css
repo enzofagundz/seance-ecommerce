@@ -428,6 +428,13 @@
         margin-bottom: 8px;
     }
 
+    .responsive {
+        height: 100%;
+        width: 100%;
+        max-width: 156px;
+        max-height: 156px;
+    }
+    
     .trend-product-title-container {
         width: 156px;
     }
@@ -597,6 +604,14 @@
         border-radius: 16px;
         margin-bottom: 8px;
     }
+
+    .responsive {
+        height: 100%;
+        width: 100%;
+        max-width: 194px;
+        max-height: 194px;
+    }
+    
 
     .trend-product-title-container {
         width: 180px;
@@ -805,6 +820,13 @@
         height: 300px;
         border-radius: 16px;
         margin-bottom: 16px;
+    }
+
+    .responsive {
+        height: 100%;
+        width: 100%;
+        max-width: 280px;
+        max-height: 300px;
     }
 
     .trend-product-title-container {
