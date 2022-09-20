@@ -285,7 +285,7 @@
         margin-bottom: 16px;
     }
 
-    .form-answer p {
+    .form-answer-text {
         margin-bottom: 16px;
     }
 
@@ -485,6 +485,10 @@
         margin-bottom: 24px;
     }
 
+    .form-answer-text {
+        margin-bottom: 24px;
+    }
+
     .check {
         margin: 16px 0px;
     }
@@ -668,8 +672,13 @@
     }
 
     .form-group {
-        margin-bottom: 16px;
+        margin-bottom: 24px;
     }
+
+    .form-answer-text {
+        margin-bottom: 24px;
+    }
+
 
     .check {
         margin: 16px 0px;
