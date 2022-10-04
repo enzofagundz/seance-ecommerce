@@ -4,9 +4,18 @@ let user = {
     confirmPassword: ''
 }
 
+const BODY = document.querySelector('body');
 const BUTTON = document.querySelector('#submit');
 let text;
 let textArea = document.querySelector('.form-answer-text');
+
+BODY.onload = () => {
+    let userString = localStorage.getItem('user');
+
+    if (userString != null) {
+        window.location = '../assets/pages/login.html';
+    }
+}
 
 BUTTON.addEventListener('click', function(event){
     event.preventDefault();
@@ -20,7 +29,7 @@ BUTTON.addEventListener('click', function(event){
     if (user.mail == '' || user.password == '' || user.confirmPassword == '') {
         if (user.mail == '' && user.confirmPassword == '' && user.confirmPassword == '')
         {
-            text= document.createTextNode('Campos vazios, insira as informações');
+            text = document.createTextNode('Campos vazios, insira as informações');
         }
         else if (user.mail== '')
         {
@@ -42,7 +51,6 @@ BUTTON.addEventListener('click', function(event){
             localStorage.setItem('user', JSON.stringify(user));
             let userString = localStorage.getItem('user');
 
-            console.log(userString);
             window.location = '../assets/pages/home.html';
         }
         else
@@ -53,4 +61,5 @@ BUTTON.addEventListener('click', function(event){
     
     textArea.appendChild(text);
 });
+
 
