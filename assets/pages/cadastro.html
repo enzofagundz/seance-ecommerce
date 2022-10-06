@@ -6,34 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <script src="../js/login.js" defer></script>
+    <script type="text/javascript" src="../js/cadastro.js" defer></script>
     <title>Séance</title>
 </head>
 <body>
     <main class="main">
         <header class="title">
-            <h1>Log in</h1>
+            <h1>Cadastro</h1>
         </header>
         <form class="form">
             <div class="form-group">
-                <label for="" class="input-title">E-mail</label>
-                <input type="email" name="email" id="email" class="input-get">
+                <label for="email" class="input-title">E-mail</label>
+                <input type="email" name="email" id="email" class="input-get" required="required">
             </div>
             <div class="form-group">
-                <label for="" class="input-title">Senha</label>
-                <input type="password" name="password" id="password" class="input-get">
+                <label for="password" class="input-title">Senha</label>
+                <input type="password" name="password" id="password" class="input-get" required="required">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password" class="input-title">Confirme sua senha</label>
+                <input type="password" name="confirm-password" id="confirm-password" class="input-get" required="required">
             </div>
             <div class="form-answer">
-                <p class="form-answer-login-text">
-                    <!--O texto será inserio aqui através do JS-->
+                <p class="form-answer-text">
+
                 </p>
             </div>
-            <span class="check">
-                <a href="redefinir.html">Esqueceu sua senha?</a>
-            </span>
-            <input type="submit" value="Log in" class="input-btn">
+            <input type="submit" value="Criar conta" class="input-btn" id="submit">
         </form>
         <aside class="aside">
             <div class="aside-text">
@@ -44,19 +45,19 @@
             <div class="aside-media">
                 <span class="media-group">
                     <button class="media-btn">
-                            <img src="../img/icon-google.png" alt="" class="img-circle">
+                        <img src="../img/icon-google.png" alt="" class="img-circle">
                     </button>
                 </span>
                 <span class="media-group">
                     <button class="media-btn">
-                            <img src="../img/icon-facebook.png" alt="" class="img-circle">
+                        <img src="../img/icon-facebook.png" alt="" class="img-circle">
                     </button>
                 </span>
             </div>
         </aside>
         <footer class="footer">
             <p>
-                Não possui uma conta? <a href="cadastro.html">Cadastre-se</a>
+                Já possui uma conta? <a href="login.html">Log in</a>
             </p>
         </footer>
     </main>

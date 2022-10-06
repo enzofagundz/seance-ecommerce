@@ -13,7 +13,7 @@ BODY.onload = () => {
     let userString = localStorage.getItem('user');
 
     if (userString != null) {
-        window.location = '../assets/pages/login.html';
+        window.location = '/assets/pages/login.html';
     }
 }
 

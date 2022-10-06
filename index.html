@@ -1,65 +1,291 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <script type="text/javascript" src="assets/js/cadastro.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Séance</title>
 </head>
-<body>
+<body">
     <main class="main">
-        <header class="title">
-            <h1>Cadastro</h1>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="home.html">
+                        <img src="assets/img/logo-seance.svg" class="icon-responsive" alt="logo">
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <ul class="navbar-menu-list">
+                        <li class="navbar-menu-item">
+                            <a href="#">
+                                <img src="assets/img/search.svg" class="icon-responsive" alt="home">
+                            </a>
+                        </li>
+                        <li class="navbar-menu-item">
+                            <a href="#">
+                                <img src="assets/img/shopping-cart.svg" class="icon-responsive" alt="carrinho de compra">
+                            </a>
+                        </li>
+                        <li class="navbar-menu-item">
+                            <a href="assets/pages/cadastro.html">
+                                <img src="assets/img/user.svg" class="icon-responsive" alt="perfil" id="user-bug">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Fim navbar-->
+        <header class="header">
+            <h1 class="header-title">
+                A escolha perfeita para a casa elegante
+            </h1>
         </header>
-        <form class="form">
-            <div class="form-group">
-                <label for="email" class="input-title">E-mail</label>
-                <input type="email" name="email" id="email" class="input-get" required="required">
+        <!--Fim header-->
+        <div class="category">
+            <div class="category-title-container">
+                <h2 class="category-title">
+                    Categorias
+                </h2>
             </div>
-            <div class="form-group">
-                <label for="password" class="input-title">Senha</label>
-                <input type="password" name="password" id="password" class="input-get" required="required">
+            <div class="category-buttons-container">
+                <a class="category-button" href="#">
+                    Cadeiras
+                </a>
+                <a class="category-button" href="#">
+                    Sofás
+                </a>
+                <a class="category-button" href="#">
+                    Mesas
+                </a>
+                <a class="category-button" href="#">
+                    Tudo
+                </a>
             </div>
-            <div class="form-group">
-                <label for="confirm-password" class="input-title">Confirme sua senha</label>
-                <input type="password" name="confirm-password" id="confirm-password" class="input-get" required="required">
+        </div>
+        <!--Fim category-->
+        <div class="offers">
+            <div class="offers-title-container">
+                <h2 class="offers-title">
+                    Ofertas
+                </h2>
             </div>
-            <div class="form-answer">
-                <p class="form-answer-text">
-
-                </p>
+            <div class="offers-banner">
+                <!--<img src="" alt="" class="offers-banner-img">-->
+                <div class="offers-banner-img"></div>
             </div>
-            <input type="submit" value="Criar conta" class="input-btn" id="submit">
-        </form>
-        <aside class="aside">
-            <div class="aside-text">
-                <p>
-                    ou
-                </p>
+        </div>
+        <!--Fim offers-->
+        <div class="trend">
+            <div class="trend-title-container">
+                <h2 class="trend-title">
+                    Em alta
+                </h2>
             </div>
-            <div class="aside-media">
-                <span class="media-group">
-                    <button class="media-btn">
-                        <img src="assets/img/icon-google.png" alt="" class="img-circle">
-                    </button>
-                </span>
-                <span class="media-group">
-                    <button class="media-btn">
-                        <img src="assets/img/icon-facebook.png" alt="" class="img-circle">
-                    </button>
-                </span>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide">
+                        <div class="trend-container">
+                            <div class="trend-product-img">
+                                <img src="assets/img/cadeira-branca-2.jpg" class="responsive">
+                            </div>
+                            <div class="trend-product-title-container">
+                                <h2 class="trend-product-title">
+                                    Cadeira branca D'Rossi
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="trend-product-img">
+                            <img src="assets/img/cadeira-branca-3.jpg" class="responsive">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Poltrona branca Combinare
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="trend-product-img">
+                            <img src="assets/img/cadeira-branca.jpg" class="responsive">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira branca estofada Luxo Sued
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="trend-product-img">
+                            <img src="assets/img/cadeira-cinza-2.jpg" class="responsive">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira cinza AM Decor
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="trend-product-img">
+                            <img src="assets/img/cadeira-cinza.jpg" class="responsive">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira preta Combinare
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="trend-product-img">
+                            <img src="assets/img/cadeira-marrom-2.jpg" class="responsive">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira marrom estofada Luxo Sued
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="trend-product-img">
+                            <img src="assets/img/cadeira-marrom.jpg" class="responsive">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira marrom Séance
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="trend-product-img">
+                            <img src="assets/img/cadeira-preta.jpg" class="responsive">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira preta Gran Belo
+                            </h2>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </aside>
-        <footer class="footer">
-            <p>
-                Já possui uma conta? <a href="assets/pages/login.html">Log in</a>
-            </p>
-        </footer>
+        </div>
+        <!--Fim trend-->
+        <div class="recommended">
+            <div class="recommended-title-container">
+                <h2 class="recommended-title">
+                    Recomendados para você
+                </h2>
+            </div>
+            <div class="recommended-content">
+                <a class="recommended-container" href="#">
+                    <div class="recommended-products">
+                        <div class="recommended-products-img"></div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="recommended-products">
+                        <div class="recommended-products-img"></div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="recommended-products">
+                        <div class="recommended-products-img"></div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </div>
+                </a>
+                <a class="recommended-container" href="#">
+                    <div class="recommended-products">
+                        <div class="recommended-products-img"></div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="recommended-products">
+                        <div class="recommended-products-img"></div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="recommended-products">
+                        <div class="recommended-products-img"></div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Fim recommended-->
     </main>
-</body>
+    <!--Fim main-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    </body>
+
 </html>
