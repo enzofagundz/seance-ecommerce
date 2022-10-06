@@ -37,7 +37,7 @@ BUTTON.addEventListener('click', function(event){
     {
         if (user.password == userObject.password && userObject.password == user.password)
         {
-            window.location = 'home.html';
+            window.location = '/index.html';
         }
         else
         {

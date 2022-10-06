@@ -51,7 +51,7 @@ BUTTON.addEventListener('click', function(event){
             localStorage.setItem('user', JSON.stringify(user));
             let userString = localStorage.getItem('user');
 
-            window.location = '../assets/pages/home.html';
+            window.location = '/index.html';
         }
         else
         {
