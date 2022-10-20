@@ -8,7 +8,7 @@ BODY.onload = () => {
     let userString = localStorage.getItem('user');
 
     if (userString == null) {
-        setTimeout(toggleModal(), 300000);
+        setTimeout(toggleModal(), 180000);
     }
     else
     {
