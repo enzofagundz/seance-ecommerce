@@ -20,10 +20,6 @@
     Configurações gerais
 */
 
-* {
-    box-sizing: border-box;
-}
-
 .main {
     height: auto;
     width: 100%;
@@ -63,7 +59,11 @@
 .recommended-title,
 .recommended,
 .trend,
-.form-answer p
+.form-answer p,
+.navbar-produto,
+.produto,
+.descricao,
+.similares
  {
     font-family: 'Raleway', sans-serif;
 }
@@ -362,6 +362,90 @@
 }
 
 /*
+    Produto
+*/
+
+.navbar-produto {
+    width: 100%;
+}
+
+.navbar-produto-container {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto {
+    background-color: #7d7d7d;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr .5fr;
+    border-radius: 8px;
+}
+
+.prod-img-container {
+    background-color: #d9863d;
+    border-radius: 8px 8px 0 0;
+}
+
+.prod-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.prod-info {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    align-items: center;
+}
+
+.prod-info-title {
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prod-info-title h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.prod-button {
+    width: 90%;
+    display: flex;
+    flex-flow: nowrap row;
+    background-color: var(--cor3);
+    height: 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.prod-button-cart {
+    display: flex;
+    flex-flow: nowrap row;
+}
+
+.prod-pipe {
+    background-color: black;
+    width: 3px;
+    height: 1.5rem;
+}
+
+.prod-button-cart h4 {
+    font-size: 15px;
+}
+
+#cart {
+    width: 20px;
+}
+/*
     Media querie mobile
 */
 
@@ -384,7 +468,12 @@
     .offers-banner,
     .trend,
     .recommended,
-    .category-buttons-container {
+    .category-buttons-container,
+    /* Produto */
+    .navbar-produto,
+    .produto,
+    .descricao,
+    .similares {
         grid-column: 2 / 6;
     }
 
@@ -626,7 +715,11 @@
     .category,
     .offers,
     .trend,
-    .recommended {
+    .recommended,
+    .navbar-produto,
+    .produto,
+    .descricao,
+    .similares {
         grid-column: 2 / 10;
     }
 
@@ -823,12 +916,11 @@
     }
 
     .icon-responsive {
-        width: 100%;
-        max-width: 40px;
+        width: 24px;
     }
     
     #user-bug {
-        width: 1em;
+        width: 18px;
     }
 
     /*
@@ -868,7 +960,11 @@
     .title,
     .form,
     .aside,
-    .footer {
+    .footer,
+    .navbar-produto,
+    .produto,
+    .descricao,
+    .similares {
         grid-column: 2 / 8;
     }
 

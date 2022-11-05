@@ -1,0 +1,35 @@
+.navbar-produto {
+    grid-row: 2;
+}
+
+.produto {
+    grid-row: 3;
+}
+
+.descricao {
+    grid-row: 4;
+}
+
+.similares {
+    grid-row: 5;
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .main {
+        grid-template-rows: 40px .10fr 4fr 2fr 2fr;
+        row-gap: 40px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) { 
+    .main {
+        grid-template-rows: 64px .10fr 4fr 2fr 2fr;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) { 
+    .main {
+        grid-template-rows: 72px .10fr 4fr 2fr 2fr;
+    }
+}
+

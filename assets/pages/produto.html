@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/produto.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="../js/mudarProduto.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Oi</h1>
+    <main class="main">
+        <nav class="navbar-produto">
+            <div class="navbar-produto-container">
+                <img src="../img/left-arrow.svg" alt="Ícone de flecha apontando para a esquerda para representar o retorno a página anterior">
+                <p>Cadeira Herman Miller</p>
+                <img src="../img/magnifier.svg" alt="Ícone de lupa representando a função pesquisa do site">
+            </div>
+        </nav>
+        <!--Fim nav-->
+        <section class="produto">
+                <div class="prod-img-container">
+                    <img src="" alt="" class="prod-img">
+                </div>
+                <div class="prod-info">
+                    <div class="prod-info-title">
+                        <h2>
+                            Nome do produto
+                        </h2>
+                        <img src="../img/heart-regular.svg" alt="" class="icon-responsive">
+                    </div>
+                    <a href="#" class="prod-button">
+                        <div class="prod-button-cart">
+                            <img src="../img/shopping-cart.svg" alt="" class="icon-responsive" id="cart">
+                            <h4>
+                                Adicionar ao carrinho
+                            </h4>
+                            <div class="prod-pipe"></div>
+                            <h5>
+                                R$ 00,00
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+        </section>
+        <section class="descricao">
+            <div>
+                <h3>
+                    Descrição
+                </h3>
+            </div>
+            <div>
+                <div>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="similares">
+            <div>
+                <h2>
+                    Em alta
+                </h2>
+            </div>
+            <div>
+                <div>
+                    <a>
+                        <div>
+                            <div>
+                                <img src="https://images2.imgbox.com/87/81/zO1X3s6c_o.jpg" id="0" onclick="produto(this.id)">
+                            </div>
+                            <div>
+                                <h2>
+                                    Cadeira branca D'Rossi
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    </main>
+    <!--Fim main-->
 </body>
+
 </html>
