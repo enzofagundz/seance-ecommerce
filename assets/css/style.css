@@ -2,7 +2,7 @@
     Fontes
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:wght@400;500;600;700&display=swap');
 
 /*
     Variáveis
@@ -25,6 +25,7 @@
     width: 100%;
     display: grid;
     justify-content: center;
+    background-color: #fbfbfb;
 }
 
 .title h1,
@@ -63,9 +64,11 @@
 .navbar-produto,
 .produto,
 .descricao,
-.similares
+.similares,
+.product,
+.navbar-container
  {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .input-get {
@@ -191,7 +194,7 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background-color: #fff;
+    background-color: #fbfbfb;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -365,86 +368,101 @@
     Produto
 */
 
-.navbar-produto {
-    width: 100%;
-}
-
-.navbar-produto-container {
+.product,
+.product-image-container,
+.product-info,
+.product-buttons,
+.product-cart,
+.product-buy {
     display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.produto {
-    background-color: #7d7d7d;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 2fr .5fr;
-    border-radius: 8px;
-}
-
-.prod-img-container {
-    background-color: #d9863d;
-    border-radius: 8px 8px 0 0;
-}
-
-.prod-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px 8px 0 0;
-}
-
-.prod-info {
-    display: flex;
+.product,
+.product-image-container,
+.product-info,
+.product-buttons {
     flex-flow: nowrap column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 1rem;
+}
+
+.product,
+.product-image-container,
+.product-buttons,
+.product-cart,
+.product-buy {
     align-items: center;
 }
 
-.prod-info-title {
+.product-info,
+.product-buttons,
+.product {
+    justify-content: space-between;
+}
+
+.product-image-container,
+.product-image,
+.product-info,
+.product-buttons {
     width: 100%;
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.prod-info-title h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
+.product-image-container {
+    height: 400px;
+    justify-content: center;
+    background-color: #273440;
+    margin-bottom: 1rem;
 }
 
-.prod-button {
-    width: 90%;
-    display: flex;
-    flex-flow: nowrap row;
+.product-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-stars {
+    height: 40px;
+}
+
+.product-stars img {
+    height: 100%;
+}
+
+.product-info {
+    height: 300px;
+    align-items: flex-start;
+    background-color: #d9d9d9;
+    padding: 1rem;
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.product-buttons {
+    height: 90px;
+}
+
+.product-cart,
+.product-buy {
+    width: 50%;
+    height: 40px;
     background-color: var(--cor3);
-    height: 2rem;
-    border-radius: 8px;
+    color: white;
     text-decoration: none;
-}
-
-.prod-button-cart {
-    display: flex;
     flex-flow: nowrap row;
+    justify-content: space-around;
+    border: none;
 }
 
-.prod-pipe {
-    background-color: black;
-    width: 3px;
-    height: 1.5rem;
+.product-cart p {
+    font-weight: 500;
+    font-size: .8em;
 }
 
-.prod-button-cart h4 {
-    font-size: 15px;
+.product-price {
+    font-weight: 500;
+    font-size: 1.75em;
 }
 
-#cart {
-    width: 20px;
-}
 /*
     Media querie mobile
 */
@@ -470,10 +488,7 @@
     .recommended,
     .category-buttons-container,
     /* Produto */
-    .navbar-produto,
-    .produto,
-    .descricao,
-    .similares {
+    .product {
         grid-column: 2 / 6;
     }
 
@@ -693,6 +708,18 @@
         width: 90%;
     }
 
+    /*
+        Produto
+    */
+
+    .product,
+    .product-image-container,
+    .product-image,
+    .product-info,
+    .product-cart,
+    .product-buy {
+        border-radius: 8px;
+    }
 }
 
 /*
@@ -719,7 +746,9 @@
     .navbar-produto,
     .produto,
     .descricao,
-    .similares {
+    .similares,
+    /* Produto */
+    .product  {
         grid-column: 2 / 10;
     }
 
