@@ -37,7 +37,6 @@ BUTTON.addEventListener('click', function(event){
     {
         if (user.password == userObject.password && userObject.password == user.password)
         {
-            grecaptcha.execute();
             window.location = '/index.html';
         }
         else

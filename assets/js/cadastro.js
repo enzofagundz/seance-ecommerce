@@ -50,7 +50,6 @@ BUTTON.addEventListener('click', function(event){
         {
             localStorage.setItem('user', JSON.stringify(user));
             let userString = localStorage.getItem('user');
-            grecaptcha.execute();
 
             window.location = '/index.html';
         }
