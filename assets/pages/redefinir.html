@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/redefinir.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src='https://www.google.com/recaptcha/api.js'></script> 
     <script src="../js/redefinir.js" defer></script>
     <title>Redefinir senha - Loja Séance</title>
 </head>
@@ -34,6 +35,9 @@
 
                 </p>
             </div>
+
+            <div id='recaptcha' class="g-recaptcha captcha-redefinir" data-sitekey="6Ldbb-ciAAAAAKIY0wAm6wMeFLPKNYbELgK0LfJI" data-callback="sendForm"></div>
+            
             <input type="submit" value="Redefinir a senha" class="input-btn">
         </form>
     </main>

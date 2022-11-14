@@ -53,6 +53,7 @@ BUTTON.addEventListener('click', function(event){
                 {
                     userObject.password = user.newPassword;
                     localStorage.setItem('user', JSON.stringify(user));
+                    grecaptcha.execute();
                     window.location = '/index.html';
                 }
                 else

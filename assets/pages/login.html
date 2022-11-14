@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/login.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <script src="../js/login.js" defer></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <title>Login - Loja Séance</title>
 </head>
 <body>
@@ -30,6 +31,9 @@
                     <!--O texto será inserio aqui através do JS-->
                 </p>
             </div>
+
+            <div id='recaptcha' class="g-recaptcha" data-sitekey="6Ldbb-ciAAAAAKIY0wAm6wMeFLPKNYbELgK0LfJI" data-callback="sendForm"></div>
+
             <span class="check">
                 <a href="redefinir.html">Esqueceu sua senha?</a>
             </span>
