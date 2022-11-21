@@ -1,0 +1,43 @@
+.navbar {
+    grid-row: 2;
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .main {
+        grid-template-rows: 40px .25fr auto 3fr;
+    }
+    .purchase {
+        grid-row: 3;
+    }
+
+    .purchase-total {
+        grid-row: 4;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .main {
+        grid-template-rows: 40px .25fr auto;
+    }
+    .purchase {
+        grid-row: 3;
+    }
+
+    .purchase-total {
+        grid-row: 3;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .main {
+        grid-template-rows: 40px .25fr auto;
+    }
+    
+    .purchase {
+        grid-row: 3;
+    }
+
+    .purchase-total {
+        grid-row: 3;
+    }
+}

@@ -23,4 +23,4 @@ imgProdutos.appendChild(img);
 precoProdutos.appendChild(price);
 descricaoProdutos.appendChild(description);
 tituloProduto.appendChild(text);
-document.title = cadeira.nome;
+document.title = cadeira.nome + ' - Loja Séance';
