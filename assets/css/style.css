@@ -76,7 +76,8 @@ body {
 .product,
 .navbar-container,
 .purchase,
-.purchase-total
+.purchase-total,
+.noItens
  {
     font-family: 'Montserrat', sans-serif;
 }
@@ -543,7 +544,8 @@ body {
     .product,
     /* Carrinho */
     .purchase,
-    .purchase-total {
+    .purchase-total,
+    .noItens {
         grid-column: 2 / 6;
     }
 
@@ -817,6 +819,31 @@ body {
         height: 50px;
         font-size: 1.25em;
         border-radius: 8px;
+    }
+
+    .noItens {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: nowrap column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .noItens-img {
+        width: 100px;
+        height: auto;
+    }
+
+    .noItens-title {
+        font-weight: 700;
+        font-size: 1.25em;
+        color: var(--cor3);
+    }
+
+    .noItens-text {
+        font-weight: 400;
+        font-size: .9em;
     }
 }
 

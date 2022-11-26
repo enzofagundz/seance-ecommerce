@@ -6,7 +6,9 @@
     .main {
         grid-template-rows: 40px .25fr auto 3fr;
     }
-    .purchase {
+
+    .purchase,
+    .noItens {
         grid-row: 3;
     }
 
@@ -19,13 +21,12 @@
     .main {
         grid-template-rows: 40px .25fr auto;
     }
-    .purchase {
+    .purchase,
+    .purchase-total,
+    .noItens {
         grid-row: 3;
     }
 
-    .purchase-total {
-        grid-row: 3;
-    }
 }
 
 @media (min-width: 1441px) and (max-width: 1920px) {
@@ -33,11 +34,9 @@
         grid-template-rows: 40px .25fr auto;
     }
     
-    .purchase {
-        grid-row: 3;
-    }
-
-    .purchase-total {
+    .purchase,
+    .purchase-total,
+    .no-itens {
         grid-row: 3;
     }
 }
