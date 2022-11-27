@@ -1,0 +1,25 @@
+.navbar {
+    grid-row: 2;
+}
+
+.product {
+    grid-row: 3;
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .main {
+        grid-template-rows: 40px .25fr 3fr;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .main {
+        grid-template-rows: 64px .25fr 3fr;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .main {
+        grid-template-rows: 72px .25fr 3fr;
+    }
+}

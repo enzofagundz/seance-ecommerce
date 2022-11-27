@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="assets/js/produto.js" defer></script>
+    <script src="assets/js/modal.js" defer></script>
+    <title>Página principal - Séance</title>
+</head>
+<body>
+    <main class="main">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo-seance.svg" class="icon-responsive" alt="Logo da empresa Séance, representada por um 'S' em um formato semelhante ao de uma cadeira.">
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <ul class="navbar-menu-list">
+                        <li class="navbar-menu-item">
+                            <a href="#">
+                                <img src="assets/img/search.svg" class="icon-responsive" alt="Ícone de uma lupa, referente ao botão de pesquisa.">
+                            </a>
+                        </li>
+                        <li class="navbar-menu-item">
+                            <a href="assets/pages/carrinho.html">
+                                <img src="assets/img/shopping-cart.svg" class="icon-responsive" alt="Ícone de carrinho de compra, referente a pagina do carrinho.">
+                            </a>
+                        </li>
+                        <li class="navbar-menu-item">
+                            <a href="assets/pages/cadastro.html">
+                                <img src="assets/img/user.svg" class="icon-responsive" alt="Ícone abstrato de um humano, representando a área do menu do site, para realizar o cadastro, login ou alterar a senha." id="user-bug">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Fim navbar-->
+        <header class="header">
+            <h1 class="header-title">
+                A escolha perfeita para a casa elegante
+            </h1>
+        </header>
+        <!--Fim header-->
+        <div class="category">
+            <div class="category-title-container">
+                <h2 class="category-title">
+                    Categorias
+                </h2>
+            </div>
+            <div class="category-buttons-container">
+                <a class="category-button" href="#">
+                    Cadeiras
+                </a>
+                <a class="category-button" href="#">
+                    Sofás
+                </a>
+                <a class="category-button" href="#">
+                    Mesas
+                </a>
+                <a class="category-button" href="#">
+                    Tudo
+                </a>
+            </div>
+        </div>
+        <!--Fim category-->
+        <div class="offers">
+            <div class="offers-title-container">
+                <h2 class="offers-title">
+                    Ofertas
+                </h2>
+            </div>
+            <div class="offers-banner">
+                <picture class="offers-banner-img">
+                    <source media="(min-width: 1441px)" srcset="assets/img/banner_grande.jpg">
+                    <source media="(min-width: 1025px)" srcset="assets/img/banner_medio.jpg">
+                    <img src="assets/img/banner_pequeno.jpg" alt="">
+                </picture>
+            </div>
+        </div>
+        <!--Fim offers-->
+        <div class="trend">
+            <div class="trend-title-container">
+                <h2 class="trend-title">
+                    Em alta
+                </h2>
+            </div>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide" id="0" onclick="produto(this.id)">
+                        <div class="trend-container">
+                            <div class="trend-product-img">
+                                <img src="assets/img/Sem-Título-1_01.jpg" class="responsive"
+                                alt="Sofá branco de dois lugares com dois travesseiros e pés metálicos">
+                            </div>
+                            <div class="trend-product-title-container">
+                                <h2 class="trend-product-title">
+                                    Sofá branco D'Rossi
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide" id="1" onclick="produto(this.id)">
+                        <div class="trend-product-img">
+                            <img src="assets/img/Sem-Título-1_02.jpg" class="responsive" 
+                            alt="Cadeira branca estofada acompanhada de uma almofada com pernas de madeira clara">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira branca Combinare
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide" id="2" onclick="produto(this.id)">
+                        <div class="trend-product-img">
+                            <img src="assets/img/Sem-Título-1_03.jpg" class="responsive" 
+                            alt="Cadeira branca estofada com pernas de madeira preta e detalhes circulares">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira branca Luxo Sued
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide" id="3" onclick="produto(this.id)">
+                        <div class="trend-product-img">
+                            <img src="assets/img/Sem-Título-1_04.jpg" class="responsive" 
+                            alt="Cadeira na cor cinza escura com formato de corpo curvo e braços baixos e pés de madeira">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira cinza AM Decor
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide" id="4" onclick="produto(this.id)">
+                        <div class="trend-product-img">
+                            <img src="assets/img/Sem-Título-1_05.jpg" class="responsive" 
+                            alt="Banco de madeira preta tamanho baixo">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Banco preto Combinare
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide" id="5" onclick="produto(this.id)">
+                        <div class="trend-product-img">
+                            <img src="assets/img/Sem-Título-1_06.jpg" class="responsive" 
+                            alt="Cadeira de branca na cor marrom com braços altos e pés de madeira com detalhes circulares.">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira branca Séance
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide" id="6" onclick="produto(this.id)">
+                        <div class="trend-product-img">
+                            <img src="assets/img/Sem-Título-1_07.jpg" class="responsive" 
+                            alt="Cadeira de escritório branca com rodinhas e pés metálicos.">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira branca Herman Miller
+                            </h2>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide" id="7" onclick="produto(this.id)">
+                        <div class="trend-product-img">
+                            <img src="assets/img/Sem-Título-1_08.jpg" class="responsive" 
+                            alt="Cadeira cinza no formato redondo com encosto e pés de madeira.">
+                        </div>
+                        <div class="trend-product-title-container">
+                            <h2 class="trend-product-title">
+                                Cadeira cinza Gran Belo
+                            </h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Fim trend-->
+        <div class="recommended">
+            <div class="recommended-title-container">
+                <h2 class="recommended-title">
+                    Recomendados para você
+                </h2>
+            </div>
+            <div class="recommended-content">
+                <div class="recommended-container">
+                    <a class="recommended-products" id="8" onclick="produto(this.id)">
+                        <div class="recommended-products-img">
+                            <img src="assets/img/Sem-Título-1_09.jpg" class="responsive"
+                            alt="Cadeira de balcão na cor branca com braços e pés de madeira">
+                        </div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </a>
+                    <a class="recommended-products" id="9" onclick="produto(this.id)">
+                        <div class="recommended-products-img">
+                            <img src="assets/img/Sem-Título-1_10.jpg" class="responsive" 
+                            alt="Cadeira de balcão na cor branca com braços e pés de madeira">
+                        </div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </a>
+                    <a class="recommended-products" id="10" onclick="produto(this.id)">
+                        <div class="recommended-products-img">
+                            <img src="assets/img/Sem-Título-1_11.jpg" class="responsive" 
+                            alt="Cadeira de balcão na cor branca com braços e pés de madeira">
+                        </div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="recommended-container">
+                    <div class="recommended-products" id="11" onclick="produto(this.id)">
+                        <div class="recommended-products-img">
+                            <img src="assets/img/Sem-Título-1_12.jpg" class="responsive" 
+                            alt="Cadeira de balcão na cor branca com braços e pés de madeira">
+                        </div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </div>
+                    <a class="recommended-products" id="12" onclick="produto(this.id)">
+                        <div class="recommended-products-img">
+                            <img src="assets/img/Sem-Título-1_13.jpg" class="responsive" 
+                            alt="Cadeira de balcão na cor branca com braços e pés de madeira">
+                        </div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </a>
+                    <a class="recommended-products" id="13" onclick="produto(this.id)">
+                        <div class="recommended-products-img">
+                            <img src="assets/img/Sem-Título-1_14.jpg" class="responsive"
+                             alt="Cadeira de balcão na cor branca com braços e pés de madeira">
+                        </div>
+                        <div class="recommended-products-info">
+                            <h3 class="recommended-products-title">
+                                Cadeira Herman Miller
+                            </h3>
+                            <p class="recommended-products-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam quia amet accusamus necessitatibus...
+                            </p>
+                            <h2 class="recommended-products-price">
+                                R$59,90
+                            </h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Fim recommended-->
+    </main>
+    <!--Fim main-->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">
+                X
+            </span>
+            <h3 class="cta-modal">
+                Cadastre-se para receber novidades e promoções
+            </h3>
+            <h1 class="modal-promo">
+                10% OFF
+            </h1>
+            <h3 class="modal-subtext">
+                na sua primeira compra
+            </h3>
+            <a href="assets/pages/cadastro.html" class="modal-button">
+                    Cadastrar agora!
+            </a>
+            <h3 class="close-text">
+                Não, obrigado
+            </h3>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/swiper.js" defer></script>
+    </body>
+
+</html>

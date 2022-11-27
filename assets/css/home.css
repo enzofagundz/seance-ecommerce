@@ -1,0 +1,47 @@
+.navbar {
+    grid-row: 2;
+}
+
+.header {
+    grid-row: 3;
+}
+
+.category {
+    grid-row: 4;
+}
+
+.offers {
+
+    grid-row: 5;
+}
+
+.trend {
+    grid-row: 6;
+}
+
+.recommended {
+    grid-row: 7;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .main {
+        grid-template-rows: 24px .25fr .25fr .5fr .75fr 1.4fr 5fr;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) { 
+    .main {
+        grid-template-rows: 64px .25fr .35fr .35fr .75fr 1fr;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) { 
+    .main {
+        grid-template-rows: 72px .1fr .35fr .25fr .50fr .75fr 1fr;
+    }
+}
+

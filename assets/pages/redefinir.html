@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/redefinir.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src='https://www.google.com/recaptcha/api.js'></script> 
+    <script src="../js/redefinir.js" defer></script>
+    <title>Redefinir senha - Loja Séance</title>
+</head>
+<body>
+    <main class="main">
+        <header class="title">
+            <h1>Redefinir a senha - Loja Séance</h1>
+        </header>
+        <form class="form">
+            <div class="form-group">
+                <label for="" class="input-title">E-mail</label>
+                <input type="email" name="email" id="email" class="input-get">
+            </div>
+            <div class="form-group">
+                <label for="" class="input-title">Digite a nova senha</label>
+                <input type="password" name="password" id="password" class="input-get">
+            </div>
+            <div class="form-group">
+                <label for="" class="input-title">Confirme sua nova senha</label>
+                <input type="password" name="newPassword" id="newPassword" class="input-get">
+            </div>
+            <div class="form-answer">
+                <p class="form-answer-text">
+
+                </p>
+            </div>
+
+            <div id='recaptcha' class="g-recaptcha captcha-redefinir" data-sitekey="6Ldbb-ciAAAAAKIY0wAm6wMeFLPKNYbELgK0LfJI" data-callback="sendForm"></div>
+            
+            <input type="submit" value="Redefinir a senha" class="input-btn">
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src="../js/login.js" defer></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <title>Login - Loja Séance</title>
+</head>
+<body>
+    <main class="main">
+        <header class="title">
+            <h1>Fazer login - Loja Séance</h1>
+        </header>
+        <form class="form">
+            <div class="form-group">
+                <label for="" class="input-title">E-mail</label>
+                <input type="email" name="email" id="email" class="input-get">
+            </div>
+            <div class="form-group">
+                <label for="" class="input-title">Senha</label>
+                <input type="password" name="password" id="password" class="input-get">
+            </div>
+            <div class="form-answer">
+                <p class="form-answer-login-text">
+                    <!--O texto será inserio aqui através do JS-->
+                </p>
+            </div>
+
+            <div id='recaptcha' class="g-recaptcha" data-sitekey="6Ldbb-ciAAAAAKIY0wAm6wMeFLPKNYbELgK0LfJI" data-callback="sendForm"></div>
+
+            <span class="check">
+                <a href="redefinir.html">Esqueceu sua senha?</a>
+            </span>
+            <input type="submit" value="Log in" class="input-btn">
+        </form>
+        <aside class="aside">
+            <div class="aside-text">
+                <p>
+                    ou
+                </p>
+            </div>
+            <div class="aside-media">
+                <span class="media-group">
+                    <button class="media-btn">
+                            <img src="../img/icon-google.png" alt="" class="img-circle">
+                    </button>
+                </span>
+                <span class="media-group">
+                    <button class="media-btn">
+                            <img src="../img/icon-facebook.png" alt="" class="img-circle">
+                    </button>
+                </span>
+            </div>
+        </aside>
+        <footer class="footer">
+            <p>
+                Não possui uma conta? <a href="cadastro.html">Cadastre-se</a>
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
