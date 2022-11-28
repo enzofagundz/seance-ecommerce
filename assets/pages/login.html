@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../css/login.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <script src="../js/login.js" defer></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <title>Login - Loja Séance</title>
 </head>
 <body>
@@ -26,13 +25,23 @@
                 <label for="" class="input-title">Senha</label>
                 <input type="password" name="password" id="password" class="input-get">
             </div>
-            <div class="form-answer">
+            <div class="form-answer answer-login">
                 <p class="form-answer-login-text">
                     <!--O texto será inserio aqui através do JS-->
                 </p>
             </div>
 
-            <div id='recaptcha' class="g-recaptcha" data-sitekey="6Ldbb-ciAAAAAKIY0wAm6wMeFLPKNYbELgK0LfJI" data-callback="sendForm"></div>
+            <div class="form-captcha captcha-login">
+                <p class="captcha-text">
+                    Por favor, verifique que você é um humano
+                </p>
+                <div class="captcha-input">
+                    <label for="resultado" id="label-resultado">
+                        
+                    </label>
+                    <input type="number" name="resultado" id="resultado">
+                </div>
+            </div>
 
             <span class="check">
                 <a href="redefinir.html">Esqueceu sua senha?</a>

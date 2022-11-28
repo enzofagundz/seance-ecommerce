@@ -516,6 +516,49 @@ body {
     border: none;
     cursor: pointer;
 }
+
+.form-captcha {
+    align-self: center;
+    width: 70%;
+    background-color:#d9d9d95e;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    border-radius: 16px;
+}
+
+.captcha-cadastro {
+    margin-bottom: 2em;
+}
+
+.captcha-text {
+    font-size: .75em;
+    font-weight: 700;
+    color: var(--cor2);
+}
+
+.captcha-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around';
+}
+
+#label-resultado {
+    font-size: .75em;
+    font-weight: 700;
+    color: #000;
+    margin-right: 10px;
+}
+
+#resultado {
+    width: 15%;
+    border: 1px solid black;
+}
 /*
     Media querie mobile
 */
@@ -562,12 +605,11 @@ body {
         margin-bottom: 16px;
     }
 
-    .captcha-cadastro,
-    .captcha-redefinir {
-        margin-bottom: 1.5em;
+    .form-group {
+        margin-bottom: 16px;
     }
 
-    .form-group {
+    .answer-login {
         margin-bottom: 16px;
     }
 
@@ -903,16 +945,12 @@ body {
         font-size: 1.25em;
     }
 
-    .captcha-cadastro,
-    .captcha-redefinir {
-        margin-bottom: 1.5em;
-    }
-
     .form-group {
         margin-bottom: 24px;
     }
 
-    .form-answer-text {
+    .form-answer-text,
+    .answer-login {
         margin-bottom: 24px;
     }
 
@@ -1194,16 +1232,12 @@ body {
         margin-bottom: 72px;
     }
 
-    .captcha-cadastro,
-    .captcha-redefinir {
-        margin-bottom: 1.5em;
-    }
-
     .form-group {
         margin-bottom: 24px;
     }
 
-    .form-answer-text {
+    .form-answer-text,
+    .answer-login {
         margin-bottom: 24px;
     }
 
