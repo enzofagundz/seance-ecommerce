@@ -519,45 +519,30 @@ body {
 
 .form-captcha {
     align-self: center;
-    width: 70%;
     background-color:#d9d9d95e;
-    height: auto;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-flow: nowrap column;
     align-items: center;
-    padding: 10px;
     justify-content: space-around;
-    border-radius: 16px;
-}
-
-.captcha-cadastro {
-    margin-bottom: 2em;
 }
 
 .captcha-text {
-    font-size: .75em;
-    font-weight: 700;
     color: var(--cor2);
 }
 
 .captcha-input {
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around';
+    justify-content: center;
 }
 
 #label-resultado {
-    font-size: .75em;
-    font-weight: 700;
     color: #000;
-    margin-right: 10px;
 }
 
 #resultado {
-    width: 15%;
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 /*
     Media querie mobile
@@ -885,7 +870,38 @@ body {
 
     .noItens-text {
         font-weight: 400;
-        font-size: .9em;
+        font-size: .8em;
+    }
+
+    .form-captcha {
+        width: 70%;
+        height: auto;
+        padding: 10px;
+        border-radius: 16px;
+    }
+
+    .captcha-cadastro {
+        margin-bottom: 2em;
+    }
+    
+    .captcha-text {
+        font-size: .75em;
+        font-weight: 700;
+    }
+
+    .captcha-input {
+        width: 100%;
+    }
+
+    #label-resultado {
+        font-size: .75em;
+        font-weight: 700;
+        margin-right: 8px;
+    }
+
+    #resultado {
+        width: 8%;
+        border-radius: 4px;
     }
 }
 
@@ -1200,6 +1216,37 @@ body {
         height: 50px;
         font-size: 1.25em;
         border-radius: 8px;
+    }
+
+    .form-captcha {
+        width: 50%;
+        height: 6em;
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .captcha-cadastro {
+        margin-bottom: 3em;
+    }
+    
+    .captcha-text {
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .captcha-input {
+        width: 100%;
+    }
+
+    #label-resultado {
+        font-size: .8em;
+        font-weight: 700;
+        margin-right: 8px;
+    }
+
+    #resultado {
+        width: 8%;
+        border-radius: 4px;
     }
 }
 
@@ -1551,5 +1598,36 @@ body {
         height: 50px;
         font-size: 1.25em;
         border-radius: 8px;
+    }
+
+    .form-captcha {
+        width: 50%;
+        height: 6em;
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .captcha-cadastro {
+        margin-bottom: 3em;
+    }
+    
+    .captcha-text {
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .captcha-input {
+        width: 100%;
+    }
+
+    #label-resultado {
+        font-size: .8em;
+        font-weight: 700;
+        margin-right: 8px;
+    }
+
+    #resultado {
+        width: 8%;
+        border-radius: 4px;
     }
 }
