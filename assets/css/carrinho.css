@@ -36,7 +36,7 @@
     
     .purchase,
     .purchase-total,
-    .no-itens {
+    .noItens {
         grid-row: 3;
     }
 }

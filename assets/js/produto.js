@@ -2,7 +2,7 @@ let cadeiras = [
   {
     nome: 'Sofá branco D\'Rossi',
     img: '../img/Sem-Título-1_01.jpg',
-    preco: '385.90',
+    preco: '1',
     descricao:
       'Sofá branco de dois lugares com dois travesseiros e pés metálicos',
     id: 0,
@@ -70,7 +70,7 @@ let cadeiras = [
   {
     nome: 'Cadeira Herman Miller',
     img: '../img/Sem-Título-1_09.jpg',
-    preco: '24.90',
+    preco: '59.90',
     descricao: 'Cadeira de escritório branca com rodinhas e pés metálicos.',
     id: 8
   },
@@ -78,7 +78,7 @@ let cadeiras = [
   {
     nome: 'Cadeira Herman Miller',
     img: '../img/Sem-Título-1_10.jpg',
-    preco: '24.90',
+    preco: '59.90',
     descricao: 'Cadeira de escritório branca com rodinhas e pés metálicos.',
     id: 9
   },
@@ -86,7 +86,7 @@ let cadeiras = [
   {
     nome: 'Cadeira Herman Miller',
     img: '../img/Sem-Título-1_11.jpg',
-    preco: '24.90',
+    preco: '59.90',
     descricao: 'Cadeira de escritório branca com rodinhas e pés metálicos.',
     id: 10,
   },
@@ -94,7 +94,7 @@ let cadeiras = [
   {
     nome: 'Cadeira Herman Miller',
     img: '../img/Sem-Título-1_12.jpg',
-    preco: '24.90',
+    preco: '59.90',
     descricao: 'Cadeira de escritório branca com rodinhas e pés metálicos.',
     id: 11,
   },
@@ -102,7 +102,7 @@ let cadeiras = [
   {
     nome: 'Cadeira Herman Miller',
     img: '../img/Sem-Título-1_13.jpg',
-    preco: '24.90',
+    preco: '59.90',
     descricao: 'Cadeira de escritório branca com rodinhas e pés metálicos.',
     id: 12,
   },
@@ -110,7 +110,7 @@ let cadeiras = [
   {
     nome: 'Cadeira Herman Miller',
     img: '../img/Sem-Título-1_14.jpg',
-    preco: '24.90',
+    preco: '59.90',
     descricao: 'Cadeira de escritório branca com rodinhas e pés metálicos.',
     id: 13,
   },
