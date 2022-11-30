@@ -24,3 +24,14 @@ precoProdutos.appendChild(price);
 descricaoProdutos.appendChild(description);
 tituloProduto.appendChild(text);
 document.title = cadeira.nome + ' - Loja Séance';
+
+let directButton = document.querySelector('.product-buy');
+let nomeProduto = cadeira.id;
+
+sessionStorage.setItem(nomeProduto, cadeiraString);
+
+directButton.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    window.location = '/assets/pages/carrinho.html'
+});

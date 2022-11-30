@@ -75,9 +75,9 @@ body {
 .similares,
 .product,
 .navbar-container,
+.noItens,
 .purchase,
-.purchase-total,
-.noItens
+.purchase-total
  {
     font-family: 'Montserrat', sans-serif;
 }
@@ -396,7 +396,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 400px;
-    background-color: #273440;
     margin-bottom: 1rem;
 }
 
@@ -486,37 +485,6 @@ body {
     Carrinho
 */
 
-.purchase {
-    width: 100%;
-}
-
-.purchase-title {
-    font-weight: 700;
-}
-
-.purchase-total {
-    width: 100%;
-    display: flex;
-    flex-flow: nowrap column;
-    justify-content: space-between;
-}
-
-.purchase-price-container {
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.purchase-button {
-    width: 100%;
-    background-color: var(--cor3);
-    color: white;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-}
-
 .form-captcha {
     align-self: center;
     background-color:#d9d9d95e;
@@ -544,6 +512,154 @@ body {
 #resultado {
     border: 1px solid #000;
 }
+
+.purchase {
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: auto;
+}
+
+.purchase-title-container,
+.purchase-total-title,
+.purchase-total-price {
+    width: 100%;
+}
+
+.purchase-title,
+.total-title {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.purchase-row {
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    height: 8em;
+    border-radius: 16px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 1rem;
+}
+
+.row-top-img {
+    width: auto;
+    max-height: 8em;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+}
+
+.item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+.row-wrap {
+    height: 100%;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.item-remove,
+.item-sign {
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 100%;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+.row-down-price {
+    font-weight: 500;
+    font-size: 1.25em;
+    width: 100%;
+    color: var(--cor3);
+}
+
+.row-down-amount {
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.item-amount {
+    width: 20%;
+    margin: 0 8px;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    height: 1.5rem;
+}
+
+.item-sign {
+    border: 1px solid #d9d9d9;
+}
+
+.purchase-total {
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: flex-start;
+    height: auto;
+}
+
+.purchase-total-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: flex-start;
+}
+
+.purchase-total-price {
+    margin-bottom: 1rem;
+}
+
+.total-price {
+    color: var(--cor3);
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.purchase-total-btn {
+    width: 100%;
+}
+
+.total-btn {
+    width: 100%;
+    height: 3em;
+    background-color: var(--cor3);
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
 /*
     Media querie mobile
 */
@@ -571,9 +687,9 @@ body {
     /* Produto */
     .product,
     /* Carrinho */
+    .noItens,
     .purchase,
-    .purchase-total,
-    .noItens {
+    .purchase-total {
         grid-column: 2 / 6;
     }
 
@@ -818,36 +934,6 @@ body {
         Carrinho
     */
 
-    .purchase-title {
-        font-size: 1.5em;
-        margin-bottom: 1rem;
-    }
-
-    .purchase-image-container {
-        width: 150px;
-        height: 150px;
-        border-radius: 8px;
-    }
-    
-    .purchase-image {
-        border-radius: 8px 0 0 8px;
-    }
-
-    .purchase-quantity-sign {
-        width: 20px;
-        height: 20px;
-    }
-
-    .purchase-total {
-        height: 120px;
-    }
-
-    .purchase-button {
-        height: 50px;
-        font-size: 1.25em;
-        border-radius: 8px;
-    }
-
     .noItens {
         width: 100%;
         height: auto;
@@ -933,14 +1019,6 @@ body {
     /* Produto */
     .product {
         grid-column: 2 / 10;
-    }
-
-    .purchase {
-        grid-column: 2 / 6;
-    }
-
-    .purchase-total {
-        grid-column: 6 / 10;
     }
 
     .title {
@@ -1200,24 +1278,6 @@ body {
         Carrinho
     */
 
-    .purchase-title {
-        font-size: 1.5em;
-        margin-bottom: 1rem;
-    }
-
-    .purchase-total {
-        background-color: #d9d9d9;
-        height: 150px;
-        padding: 1rem;
-        border-radius: 8px;
-    }
-
-    .purchase-button {
-        height: 50px;
-        font-size: 1.25em;
-        border-radius: 8px;
-    }
-
     .form-captcha {
         width: 50%;
         height: 6em;
@@ -1247,6 +1307,21 @@ body {
     #resultado {
         width: 8%;
         border-radius: 4px;
+    }
+
+    .purchase {
+        grid-column: 2 / 6;
+    }
+
+    .purchase-total {
+        grid-column: 6 / 10;
+        background:#d8d8d8;
+        border-radius: 16px;
+        height: 55%;
+    }
+
+    .purchase-total-container {
+        padding: 1rem;
     }
 }
 
@@ -1574,32 +1649,6 @@ body {
         Carrinho
     */
 
-    .purchase {
-        grid-column: 2 / 8;
-    }
-
-    .purchase-total {
-        grid-column: 8 / 14;
-    }
-
-    .purchase-title {
-        font-size: 1.5em;
-        margin-bottom: 1rem;
-    }
-    
-    .purchase-total {
-        background-color: #d9d9d9;
-        height: 150px;
-        padding: 1rem;
-        border-radius: 8px;
-    }
-
-    .purchase-button {
-        height: 50px;
-        font-size: 1.25em;
-        border-radius: 8px;
-    }
-
     .form-captcha {
         width: 50%;
         height: 6em;
@@ -1629,5 +1678,20 @@ body {
     #resultado {
         width: 8%;
         border-radius: 4px;
+    }
+
+    .purchase {
+        grid-column: 3 / 8;
+    }
+
+    .purchase-total {
+        grid-column: 8 / 13;
+        background:#d8d8d8;
+        border-radius: 16px;
+        height: 55%;
+    }
+
+    .purchase-total-container {
+        padding: 1rem;
     }
 }

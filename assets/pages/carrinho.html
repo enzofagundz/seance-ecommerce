@@ -36,33 +36,95 @@
 
             </div>
         </nav>
-        <section class="purchase">
-             <div class="purchase-title-container">
-                <h4 class="purchase-title">
-                    Meu carrinho
-                </h4>
+        <div class="purchase">
+            <div class="purchase-title-container">
+                <h1 class="purchase-title">Meu Carrinho</h1>
             </div>
-            
-        </section>
-        <aside class="purchase-total">
-            <div>
-                <div class="purchase-total-container">
-                    <h4 class="purchase-title">
+            <div class="purchase-row">
+                <div class="row-top-img">
+                    <img src="../img/Sem-Título-1_01.jpg" alt="" class="item-img">
+                </div>
+                <div class="row-wrap">
+                    <div class="row-top row">
+                        <div class="row-top-title">
+                            <h3 class="item-name">
+                                Cadeira de escritório
+                            </h3>
+                        </div>
+                        <div class="row-top-remove">
+                            <h4 class="item-remove">
+                                X
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row-down row">
+                        <div class="row-down-price">
+                            <h3 class="item-price">
+                                R$ 20,00
+                            </h3>
+                        </div>
+                        <div class="row-down-amount">
+                            <input type="button" value="-" class="item-sign">
+                            <input type="text" value="1" class="item-amount">
+                            <input type="button" value="+" class="item-sign">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="purchase-row">
+                <div class="row-top-img">
+                    <img src="../img/Sem-Título-1_01.jpg" alt="" class="item-img">
+                </div>
+                <div class="row-wrap">
+                    <div class="row-top row">
+                        <div class="row-top-title">
+                            <h3 class="item-name">
+                                Cadeira de escritório
+                            </h3>
+                        </div>
+                        <div class="row-top-remove">
+                            <h4 class="item-remove">
+                                X
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row-down row">
+                        <div class="row-down-price">
+                            <h3 class="item-price">
+                                R$ 20,00
+                            </h3>
+                        </div>
+                        <div class="row-down-amount">
+                            <input type="button" value="-" class="item-sign">
+                            <input type="text" value="1" class="item-amount">
+                            <input type="button" value="+" class="item-sign">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="purchase-total">
+            <div class="purchase-total-container">
+                <div class="purchase-total-title">
+                    <h3 class="total-title">
                         Total
-                    </h4>
+                    </h3>
                 </div>
-                <div class="purchase-price-container">
-                    <p>Valor total</p>
-                    <h2 class="purchase-total-price">
-                        R$59,90
-                    </h2>
+                <div class="purchase-total-price">
+                    <h3 class="total-price">
+                        R$ 20
+                    </h3>
+                </div>
+                <div class="purchase-total-btn">
+                    <input type="button" class="total-btn" value="Finalizar compra">
                 </div>
             </div>
-            <div class="purchase-button-container">
-                <button class="purchase-button">
-                    Finalizar compra
-                </button>
-        </aside>
+        </div>
+        <div class="noItens" style="display: none;">
+            <img src="../img/empty-cart.png" alt="" class="noItens-img">
+            <h1 class="noItens-title">Que pena, seu carrinho está vazio</h1>
+            <p class="noItens-text">Mas você pode enchê-lo quando quiser</p>
+        </div>
     </main>
 </body>
 
