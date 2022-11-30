@@ -2,7 +2,7 @@ let cadeiras = [
   {
     nome: 'Sofá branco D\'Rossi',
     img: '../img/Sem-Título-1_01.jpg',
-    preco: '1',
+    preco: '385.80',
     descricao:
       'Sofá branco de dois lugares com dois travesseiros e pés metálicos',
     id: 0,
